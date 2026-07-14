@@ -1,0 +1,218 @@
+---
+const year = new Date().getFullYear();
+------
+const year = new Date().getFullYear();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerald Layer Company | Custom 3D Printing</title>
+
+    <style>
+      :root {
+        --emerald: #0f5132;
+        --emerald-dark: #09351f;
+        --light: #f8f8f6;
+        --gold: #b48a4a;
+        --text: #1d1d1d;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--light);
+        color: var(--text);
+      }
+
+      header {
+        background: var(--emerald-dark);
+        color: white;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 24px;
+        font-weight: bold;
+      }
+
+      .hero {
+        background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+          url("/banner.jpg") center/cover;
+        min-height: 70vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:white;
+        padding:40px;
+      }
+
+      .hero h1{
+        font-size:3.5rem;
+        margin-bottom:15px;
+      }
+
+      .hero p{
+        font-size:1.3rem;
+        margin-bottom:35px;
+      }
+
+      .buttons{
+        display:flex;
+        gap:20px;
+        justify-content:center;
+        flex-wrap:wrap;
+      }
+
+      .btn{
+        padding:16px 34px;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:bold;
+      }
+
+      .primary{
+        background:var(--emerald);
+        color:white;
+      }
+
+      .secondary{
+        border:2px solid white;
+        color:white;
+      }
+
+      section{
+        max-width:1200px;
+        margin:auto;
+        padding:80px 30px;
+      }
+
+      h2{
+        color:var(--emerald-dark);
+        margin-bottom:30px;
+        text-align:center;
+      }
+
+      .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:30px;
+      }
+
+      .card{
+        background:white;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 8px 25px rgba(0,0,0,.08);
+      }
+
+      .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+      }
+
+      .card h3{
+        padding:20px;
+      }
+
+      footer{
+        background:var(--emerald-dark);
+        color:white;
+        text-align:center;
+        padding:30px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h2>Emerald Layer Company</h2>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Gallery</a>
+        <a href="#">Custom Printing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+
+      <div>
+
+        <h1>Premium Custom 3D Printing</h1>
+
+        <p>
+          Designed, Printed & Shipped from Humboldt County, California
+        </p>
+
+        <div class="buttons">
+
+          <a class="btn primary" href="#">
+            Shop Products
+          </a>
+
+          <a class="btn secondary" href="#">
+            Request a Quote
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <section>
+
+      <h2>Collections</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <img src="/placeholder.jpg">
+          <h3>Planters & Home Decor</h3>
+        </div>
+
+        <div class="card">
+          <img src="/placeholder.jpg">
+          <h3>12 Oz. Can Koozie</h3>
+        </div>
+
+        <div class="card">
+          <img src="/placeholder.jpg">
+          <h3>Signs</h3>
+        </div>
+
+		<div class="card">
+          <img src="/placeholder.jpg">
+          <h3>Toys/Fidgets</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      © {year} Emerald Layer Company
+
+    </footer>
+
+  </body>
+
+</html>

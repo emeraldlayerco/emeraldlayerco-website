@@ -1,0 +1,107 @@
+---
+export interface Props {
+  title?: string;
+}
+
+const { title = "Emerald Layer Company" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <style is:global>
+      :root{
+        --emerald:#0E3B2E;
+        --emerald-light:#16553F;
+        --gold:#C9A45B;
+        --cream:#F7F5F2;
+        --text:#222;
+        --shadow:0 12px 30px rgba(0,0,0,.08);
+        --radius:18px;
+        --max-width:1200px;
+      }
+
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+
+      html{
+        scroll-behavior:smooth;
+      }
+
+      body{
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        background:var(--cream);
+        color:var(--text);
+        line-height:1.6;
+      }
+
+      img{
+        max-width:100%;
+        display:block;
+      }
+
+      .container{
+        width:min(92%, var(--max-width));
+        margin:auto;
+      }
+
+      section{
+        padding:5rem 0;
+      }
+
+      h1,h2,h3{
+        line-height:1.15;
+      }
+
+      h2{
+        font-size:2.4rem;
+        color:var(--emerald);
+        margin-bottom:1rem;
+      }
+
+      p{
+        color:#555;
+      }
+
+      .btn{
+        display:inline-block;
+        padding:14px 28px;
+        border-radius:999px;
+        text-decoration:none;
+        font-weight:700;
+        transition:.25s ease;
+      }
+
+      .btn-primary{
+        background:var(--emerald);
+        color:white;
+      }
+
+      .btn-primary:hover{
+        background:var(--emerald-light);
+        transform:translateY(-2px);
+      }
+
+      .btn-outline{
+        border:2px solid white;
+        color:white;
+      }
+
+      .btn-outline:hover{
+        background:white;
+        color:var(--emerald);
+      }
+    </style>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

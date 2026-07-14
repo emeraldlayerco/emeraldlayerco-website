@@ -1,0 +1,107 @@
+<header class="site-header">
+  <div class="container">
+
+    <a href="/" class="logo">
+      Emerald Layer Company
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/shop">Shop</a>
+      <a href="/collections">Collections</a>
+      <a href="/custom-printing">Custom Printing</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <a href="/custom-printing" class="quote-button">
+      Get a Quote
+    </a>
+
+  </div>
+</header>
+
+<style>
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:#0b3d2e;
+    color:white;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 32px;
+}
+
+.logo{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+}
+
+nav{
+
+    display:flex;
+
+    gap:28px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+nav a:hover{
+
+    color:#d8b15a;
+}
+
+.quote-button{
+
+    background:#d8b15a;
+
+    color:#222;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.25s;
+}
+
+.quote-button:hover{
+
+    transform:translateY(-2px);
+}
+</style>
